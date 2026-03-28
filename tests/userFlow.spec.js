@@ -69,9 +69,9 @@ test('Task 3 - Update Profile: should update account details and save successful
 });
 
 // ---------------------------------------------------------------------------
-// Task 4 - Add New Address
+// Task 5 - Add New Address(Bonus)
 // ---------------------------------------------------------------------------
-test('Task 4 - Add New Address: should add an address and assert it appears in the list', async ({ page }) => {
+test('Task 5 - Add New Address: should add an address and assert it appears in the list', async ({ page }) => {
   // Arrange - log in first
   const loginPage = new LoginPage(page);
   await loginPage.goto(URLS.base);
