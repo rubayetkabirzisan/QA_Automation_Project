@@ -5,7 +5,7 @@
 ## Project Structure
 
 ```
-rubaetkabirzishan-weDevs-SQA/
+QA_Automation_Project/
 ├── pages/
 │   ├── RegisterPage.js       ← Task 1 — Registration POM
 │   ├── LoginPage.js          ← Task 2 — Login POM
