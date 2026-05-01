@@ -34,7 +34,7 @@ QA_Automation_Project/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/rubaetkabirzishan-weDevs-SQA.git
+git clone https://github.com/<your-username>/QA_Automation_Project.git
 cd rubaetkabirzishan-weDevs-SQA
 ```
 
