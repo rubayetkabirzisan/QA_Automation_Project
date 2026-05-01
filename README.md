@@ -1,4 +1,4 @@
-# rubaetkabirzishan-weDevs-SQA
+# QA_Automation_Project
 
 ---
 
