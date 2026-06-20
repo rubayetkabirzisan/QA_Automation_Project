@@ -1,20 +1,22 @@
-# rubaetkabirzishan-weDevs-SQA
+# Playwright Automation Project
+
+A Playwright automation project built around a reusable page object model and end-to-end user flows.
 
 ---
 
 ## Project Structure
 
 ```
-rubaetkabirzishan-weDevs-SQA/
+playwright-automation-project/
 ├── pages/
-│   ├── RegisterPage.js       ← Task 1 — Registration POM
-│   ├── LoginPage.js          ← Task 2 — Login POM
-│   ├── ProfilePage.js        ← Task 3 — Update Profile POM
-│   └── AddressBookPage.js    ← Task 5 — Add Address POM (Bonus)
+│   ├── RegisterPage.js       ← Registration page object
+│   ├── LoginPage.js          ← Login page object
+│   ├── ProfilePage.js        ← Profile update page object
+│   └── AddressBookPage.js    ← Address book page object
 ├── tests/
-│   └── userFlow.spec.js      ← All test cases (Tasks 1–3, 5)
+│   └── userFlow.spec.js      ← End-to-end user flow tests
 ├── utils/
-│   └── testData.js           ← Centralised test data (no hardcoded values in tests)
+│   └── testData.js           ← Centralised test data
 ├── playwright.config.js
 ├── package.json
 └── README.md
@@ -34,8 +36,8 @@ rubaetkabirzishan-weDevs-SQA/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/rubaetkabirzishan-weDevs-SQA.git
-cd rubaetkabirzishan-weDevs-SQA
+git clone <your-repository-url>
+cd playwright-automation-project
 ```
 
 ### 2. Install dependencies
@@ -74,17 +76,17 @@ npx playwright show-report
 
 ---
 
-## Test Cases
+## Test Coverage
 
-| # | Test Name | Marks |
-|---|-----------|-------|
-| 1 | Task 1 — Customer Registration | 6 |
-| 2 | Task 2 — Login | 4 |
-| 3 | Task 3 — Update Profile | 4 |
-| 4 | *(GitHub Upload — see repo)* | 6 |
-| 5 | Task 5 — Add New Address *(Bonus)* | 5 |
+| # | Scenario |
+|---|----------|
+| 1 | Customer registration |
+| 2 | Login |
+| 3 | Update profile |
+| 4 | GitHub repository upload |
+| 5 | Add a new address |
 
-> **Note:** Tests run sequentially (workers: 1) because Tasks 2–5 depend on the account created in Task 1. A unique email is generated at runtime (`Date.now()`) so each test run starts fresh.
+> **Note:** Tests run sequentially (workers: 1) because later scenarios depend on the account created in the registration flow. A unique email is generated at runtime (`Date.now()`) so each test run starts fresh.
 
 ---
 
